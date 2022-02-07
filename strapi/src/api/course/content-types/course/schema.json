@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "courses",
+  "info": {
+    "singularName": "course",
+    "pluralName": "courses",
+    "displayName": "Course",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 30
+    },
+    "code": {
+      "type": "string",
+      "required": true
+    },
+    "school": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::school.school",
+      "inversedBy": "courses"
+    },
+    "grade": {
+      "type": "enumeration",
+      "enum": [
+        "Grade1",
+        "Grade2",
+        "Grade3",
+        "Grade4",
+        "Grade5",
+        "Grade6",
+        "Grade7",
+        "Grade8",
+        "Grade9",
+        "Grade10",
+        "Grade11",
+        "Grade12"
+      ]
+    },
+    "programme": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::programme.programme",
+      "inversedBy": "courses"
+    },
+    "teachers": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::teacher.teacher",
+      "mappedBy": "courses"
+    },
+    "students": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::student.student",
+      "mappedBy": "courses"
+    }
+  }
+}

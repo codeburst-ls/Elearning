@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "school_admins",
+  "info": {
+    "singularName": "school-admin",
+    "pluralName": "school-admins",
+    "displayName": "School Admin",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "slug": {
+      "type": "uid",
+      "required": true
+    },
+    "school": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::school.school",
+      "inversedBy": "school_admins"
+    }
+  }
+}

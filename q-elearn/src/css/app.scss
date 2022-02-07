@@ -1,0 +1,29 @@
+// app global css in SCSS form
+.page {
+  background: linear-gradient(
+    -90deg,
+    #0da574,
+    #00bfa6,
+    #00bfa6,
+    #0da574,
+    #00bfa6,
+    #00bfa6
+  );
+  background-size: 400%;
+  animation: AnimationName 22s infinite;
+  color: white;
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 9% 0%;
+  }
+
+  50% {
+    background-position: 92% 100%;
+  }
+
+  100% {
+    background-position: 9% 0%;
+  }
+}

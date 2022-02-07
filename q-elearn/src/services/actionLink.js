@@ -1,0 +1,92 @@
+export const linksList = [
+  {
+    title: "Dashboard",
+    icon: "school",
+    link: { name: "index" },
+    roles: ["admin", "student", "teacher"],
+  },
+  {
+    title: "Posts",
+    icon: "code",
+    link: { name: "posts" },
+    roles: ["admin", "student", "teacher"],
+  },
+  {
+    title: "Chats",
+    icon: "chat",
+    link: { name: "chats" },
+    roles: ["admin", "student", "teacher"],
+  },
+  {
+    title: "Time Table",
+    icon: "record_voice_over",
+    link: { name: "timeTable" },
+    roles: ["admin", "student", "teacher"],
+  },
+  {
+    title: "Life Meetings",
+    icon: "rss_feed",
+    link: { name: "lifeMeetings" },
+    roles: ["admin", "student", "teacher"],
+  },
+  {
+    title: "School Calender",
+    icon: "public",
+    link: { name: "schoolCalendar" },
+    roles: ["admin", "student", "teacher"],
+  },
+  {
+    title: "Tests",
+    icon: "favorite",
+    link: { name: "tests" },
+    roles: ["student", "teacher"],
+  },
+  {
+    title: "Teachers",
+    icon: "favorite",
+    link: { name: "teachers" },
+    roles: ["admin", "student"],
+  },
+  {
+    title: "Students",
+    icon: "favorite",
+    link: { name: "students" },
+    roles: ["admin", "teacher"],
+  },
+  {
+    title: "Admins",
+    icon: "favorite",
+    link: { name: "admins" },
+    roles: ["admin"],
+  },
+  {
+    title: "Whiteboard",
+    icon: "favorite",
+    link: { name: "whiteboard" },
+    roles: ["student", "teacher"],
+  },
+  {
+    title: "Assignments",
+    icon: "favorite",
+    link: { name: "assignments" },
+    roles: ["student", "teacher"],
+  },
+  {
+    title: "Library",
+    icon: "favorite",
+    link: { name: "library" },
+    roles: ["student", "teacher"],
+  },
+  {
+    title: "Courses",
+    icon: "favorite",
+    link: { name: "courses" },
+    roles: ["admin", "student", "teacher"],
+  },
+  {
+    title: "Discussions",
+    icon: "favorite",
+    link: { name: "Discussions" },
+    roles: ["student", "teacher"],
+  },
+];
