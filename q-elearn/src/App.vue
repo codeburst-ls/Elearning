@@ -1,6 +1,3 @@
-<template>
-  <router-view />
-</template>
 <script setup>
 import { onMounted } from "vue";
 import useAuth from "./hooks/useAuth";
@@ -11,3 +8,6 @@ onMounted(() => {
   authenticate();
 });
 </script>
+<template>
+  <router-view />
+</template>
