@@ -1,9 +1,39 @@
-###Elearn first commit###
+#Elearning
 
-Run npm intall in q-elearn and strapi folder
+## Description
 
-Run pip install -r requirements.txt in mychat folder
+An online platform for creating virtual schools where admins can register a school and enable easy access to students to be taught online with assignments,live video classes,live tests and more.
 
-for strapi run npm run develop or yarn develop
+## How to use this source code
 
-for q-elearn run quasar dev
+#### 1 - Clone repo
+
+```
+git clone https://github.com/codeburst-ls/Elearning/tree/master/mychat-master
+```
+
+#### 2 - Install requirements
+
+##### run frontend
+
+```
+cd q-elearn
+
+npm install
+  or
+yarn
+
+quasar dev
+```
+
+##### run backend
+
+```
+cd strapi
+
+npm install
+  or
+yarn
+
+yarn develop
+```
