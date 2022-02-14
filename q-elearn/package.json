@@ -18,6 +18,7 @@
     "core-js": "^3.6.5",
     "qs": "^6.10.3",
     "quasar": "^2.5.2",
+    "socket.io-client": "^4.4.1",
     "vue": "^3.2.29",
     "vue-router": "4",
     "vuex": "4"
